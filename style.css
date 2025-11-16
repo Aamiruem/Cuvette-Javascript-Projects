@@ -30,32 +30,34 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 1%;
 }
 .game {
-	padding: 15%;
+	padding: 10%;
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/* padding-bottom: 10%; */
 }
 
 header {
 	position: relative;
 	border: 2px solid #fff;
 	border-radius: 13px;
-	width: 1000px;
+	width: 900px;
 	height: 188px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	margin-top: 1%;
+	
 }
 
 #reload {
 	content: "";
 	position: absolute;
 	bottom: 0;
-	right: 10px;
+	right: 7px;
 	cursor: pointer;
 	font-size: 20px;
 	font-weight: bolder;
@@ -68,18 +70,21 @@ header {
 	font-weight: bolder;
 	flex-basis: 10%;
 	letter-spacing: 10px;
-	margin-left: -100px;
+	margin-left: -8%;
 }
 .score {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	flex-basis: 33%;
+	flex-basis: 40%;
 	/* padding-bottom: 10%; */
+	margin-left: -6%;
+	margin: 1%;
+
 }
 .scoreBox {
-	width: 139px;
-	height: 128px;
+	width: 149px;
+	height: 158px;
 	background-color: #fff;
 	color: #000;
 	border-radius: 9px;
@@ -87,8 +92,9 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-top: 15px;
-	margin-right: -230px;
+	padding-top: 1px;
+	margin-right: -50%;
+	
 }
 .scoreBox p {
 	font-size: 18px;
@@ -99,7 +105,6 @@ header {
 .scoreBox span {
 	font-size: 68px;
 	font-weight: bolder;
-	/* padding-top: 10%; */
 }
 
 /* Rules */
@@ -232,7 +237,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	transform: rotate(180deg);
-	padding-bottom: 12%;
+	margin-bottom:10%;
 }
 .makeChoice::after {
 	content: "";
@@ -245,15 +250,14 @@ header {
 	border-bottom: 300px solid #8cc461;
 	border-right: 300px solid transparent;
 	border-left: 300px solid transparent;
-	/* padding-bottom: 100px; */
 }
 
 .choiceImg {
 	transform: rotate(180deg);
 	background-color: #fff;
 	border-radius: 50%;
-	width: 150px;
-	height: 150px;
+	width: 170px;
+	height: 170px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -264,16 +268,16 @@ header {
 .stone {
 	border: 20px solid #0074b6;
 	position: absolute;
-	top: 460px;
-	left: 260px;
+	top: 300px;
+	left: 230px;
 	z-index: 100;
 }
 .stone:hover::after {
 	content: "";
 	position: absolute;
 	display: block;
-	width: 150px;
-	height: 150px;
+	width: 170px;
+	height: 170px;
 	border-radius: 50%;
 	z-index: -1;
 	animation: stoneAnimation 0.6s infinite alternate-reverse;
@@ -291,15 +295,15 @@ header {
 	border: 20px solid #ffa943;
 	position: absolute;
 	bottom: -100px;
-	left: -90px;
+	left: -85px;
 	z-index: 100;
 }
 .paper:hover::after {
 	content: "";
 	position: absolute;
 	display: block;
-	width: 150px;
-	height: 150px;
+	width: 170px;
+	height: 170px;
 	border-radius: 50%;
 	z-index: -1;
 	animation: paperAnimation 0.6s infinite alternate-reverse;
@@ -316,16 +320,16 @@ header {
 .scissor {
 	border: 20px solid #bd00ff;
 	position: absolute;
-	top: 460px;
-	right: 260px;
+	top: 300px;
+	right: 230px;
 	z-index: 100;
 }
 .scissor:hover::after {
 	content: "";
 	position: absolute;
 	display: block;
-	width: 150px;
-	height: 150px;
+	width: 170px;
+	height: 170px;
 	border-radius: 50%;
 	z-index: -1;
 	animation: scissorAnimation 0.6s infinite alternate-reverse;
@@ -661,7 +665,7 @@ header {
 /* Hurray Page */
 
 .winning {
-	/* width: 100%; */
+	width: 100%;
 	height: 100vh;
 	overflow: hidden;
 	display: flex;
