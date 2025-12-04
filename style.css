@@ -10,6 +10,7 @@ body {
 	background-color: #8cc461;
 	/* background-color: rgb(120, 26, 163); */
 	height: 100vh;
+	zoom: 75%;
 	overflow: hidden;
 	display: flex;
 	/* align-items: center; */
@@ -30,6 +31,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 10;
 }
 .game {
 	padding: 10%;
@@ -44,12 +46,13 @@ header {
 	position: relative;
 	border: 2px solid #fff;
 	border-radius: 13px;
-	width: 900px;
-	height: 188px;
+	width: 800px;
+	height: 158px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	margin-top: 1%;
+	margin-top: 8%;
+	margin-bottom: 8%;
 	
 }
 
@@ -83,8 +86,8 @@ header {
 
 }
 .scoreBox {
-	width: 129px;
-	height: 158px;
+	width: 119px;
+	height: 138px;
 	background-color: #fff;
 	color: #000;
 	border-radius: 9px;
@@ -92,7 +95,7 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-top: 1px;
+	padding-top: 5px;
 	margin-right: -50%;
 	
 }
@@ -120,11 +123,11 @@ header {
 	color: #fff;
 	font-size: 30px;
 	border-radius: 10px;
-	padding: 5px 30px;
+	padding: 5px 10px;
 	text-transform: uppercase;
 	cursor: pointer;
 	border: 1px solid #fff;
-	margin: 10px;
+	margin: 1px;
 }
 #next {
 	display: none;
@@ -170,11 +173,11 @@ header {
 	justify-content: center;
 	flex-direction: column;
 	position: fixed;
-	right: 80px;
-	bottom: 120px;
+	right: 40px;
+	bottom: 10px;
 	border: 7px solid #fff;
 	border-radius: 13px;
-	z-index : 1000;
+	z-index : 10;
 }
 #gameRule h1 {
 	font-size: 29px;
@@ -226,10 +229,12 @@ header {
 
 /* makeChoice */
 
+
+
 .makeChoice {
 	position: relative;
-	width: 0;
-	height: 0;
+	width:300;
+	height: 300;
 	border-bottom: 400px solid #324723;
 	border-right: 400px solid rgba(128, 128, 128, 0);
 	border-left: 400px solid #00000000;
@@ -237,7 +242,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	transform: rotate(180deg);
-	margin-bottom:10%;
+	margin-bottom:4%;
 }
 .makeChoice::after {
 	content: "";
@@ -256,8 +261,8 @@ header {
 	transform: rotate(180deg);
 	background-color: #fff;
 	border-radius: 50%;
-	width: 170px;
-	height: 170px;
+	width: 160px;
+	height: 160px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -268,16 +273,16 @@ header {
 .stone {
 	border: 20px solid #0074b6;
 	position: absolute;
-	top: 300px;
-	left: 230px;
+	top: 290px;
+	left: 250px;
 	z-index: 100;
 }
 .stone:hover::after {
 	content: "";
 	position: absolute;
 	display: block;
-	width: 170px;
-	height: 170px;
+	width: 160px;
+	height: 160px;
 	border-radius: 50%;
 	z-index: -1;
 	animation: stoneAnimation 0.6s infinite alternate-reverse;
@@ -294,16 +299,16 @@ header {
 .paper {
 	border: 20px solid #ffa943;
 	position: absolute;
-	bottom: -100px;
-	left: -85px;
+	bottom: -120px;
+	left: -70px;
 	z-index: 100;
 }
 .paper:hover::after {
 	content: "";
 	position: absolute;
 	display: block;
-	width: 170px;
-	height: 170px;
+	width: 160px;
+	height: 160px;
 	border-radius: 50%;
 	z-index: -1;
 	animation: paperAnimation 0.6s infinite alternate-reverse;
@@ -320,16 +325,16 @@ header {
 .scissor {
 	border: 20px solid #bd00ff;
 	position: absolute;
-	top: 300px;
-	right: 230px;
+	top: 290px;
+	right: 250px;
 	z-index: 100;
 }
 .scissor:hover::after {
 	content: "";
 	position: absolute;
 	display: block;
-	width: 170px;
-	height: 170px;
+	width: 160px;
+	height: 160px;
 	border-radius: 50%;
 	z-index: -1;
 	animation: scissorAnimation 0.6s infinite alternate-reverse;
@@ -352,11 +357,11 @@ header {
 	position: relative;
 	border-radius: 50%;
 	display: flex;
-	min-width: 170px;
-	min-height: 170px;
+	min-width: 160px;
+	min-height: 160px;
 	align-items: center;
 	justify-content: center;
-	/* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623); */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
 	border: 20px solid red;
 	box-shadow: 3px 0px 21px 1px rgba(0, 0, 0, 0.2) inset;
 }
@@ -431,7 +436,7 @@ header {
 	height: 270px;
 	border-radius: 50%;
 	animation: winnerAnimation 0.8s alternate-reverse infinite;
-	/* animation: winnerAnimation 1s infinite; */
+	animation: winnerAnimation 1s infinite;
 }
 
 @keyframes winnerAnimation {
