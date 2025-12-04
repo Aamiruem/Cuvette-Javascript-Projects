@@ -46,8 +46,8 @@ header {
 	position: relative;
 	border: 2px solid #fff;
 	border-radius: 13px;
-	width: 800px;
-	height: 158px;
+	width: 900px;
+	height: 178px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -73,7 +73,7 @@ header {
 	font-weight: bolder;
 	flex-basis: 10%;
 	letter-spacing: 10px;
-	margin-left: -8%;
+	margin-left: -10%;
 }
 .score {
 	display: flex;
@@ -86,8 +86,8 @@ header {
 
 }
 .scoreBox {
-	width: 119px;
-	height: 138px;
+	width: 139px;
+	height: 158px;
 	background-color: #fff;
 	color: #000;
 	border-radius: 9px;
@@ -96,7 +96,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding-top: 5px;
-	margin-right: -50%;
+	margin-right: -65%;
 	
 }
 .scoreBox p {
